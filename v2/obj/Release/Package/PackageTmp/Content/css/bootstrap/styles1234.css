@@ -1,0 +1,429 @@
+﻿.content__wrapper, .grid__wrapper {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.content__container {
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
+    padding-top: 25px;
+    background-color: #fff;
+}
+
+    .content__container > :last-child {
+        margin-bottom: 0;
+    }
+
+    .content__container body:not(.template--landing-page) {
+        padding-bottom: 25px;
+    }
+
+
+.component--content-block .content-block--default ul {
+    margin-left: 0;
+}
+
+.component--content-block ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.component--content-block li {
+    position: relative;
+    padding-left: 20px;
+}
+
+    .component--content-block li + li {
+        margin-top: 5px;
+    }
+
+    .component--content-block li:before {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        padding-right: 15px;
+        color: #333;
+        font-size: 17px;
+        font-size: 1.7rem;
+        font-style: normal;
+        line-height: 18px;
+        line-height: 1.8rem;
+        line-height: 1.1em;
+        content: "•"
+    }
+
+.template--default .component--content-block li:before {
+    color: #045072;
+}
+
+.template--green .component--content-block li:before {
+    color: #78be1f;
+}
+
+.template--blue .component--content-block li:before {
+    color: #0090da;
+}
+
+.template--orange .component--content-block li:before {
+    color: #e35205;
+}
+
+.template--purple .component--content-block li:before {
+    color: #782b8f;
+}
+
+.template--red .component--content-block li:before {
+    color: #8a2a2b;
+}
+
+.template--teal .component--content-block li:before {
+    color: #009ca6;
+}
+
+.component--content-block table {
+    table-layout: fixed;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+}
+
+    .component--content-block table:last-child {
+        margin-bottom: 0;
+    }
+
+    .component--content-block table > tbody tr:first-of-type, .component--content-block table > thead tr:first-of-type {
+        border-top: 1px solid #045072;
+    }
+
+        .component--content-block table > tbody tr:first-of-type td, .component--content-block table > tbody tr:first-of-type th, .component--content-block table > thead tr:first-of-type td, .component--content-block table > thead tr:first-of-type th {
+            padding: 10px 20px;
+            border-top: 1px solid #045072;
+            border-bottom: 1px solid #045072;
+            color: #045072;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+    .component--content-block table > tbody tr:last-child, .component--content-block table > thead tr:last-child {
+        border-bottom-style: solid;
+    }
+
+    .component--content-block table thead + tbody tr:first-of-type td, .component--content-block table thead + tbody tr:first-of-type th {
+        padding: 20px;
+        border: 0;
+        color: #000;
+        vertical-align: top;
+        min-width: 200px;
+        font-weight: 300;
+    }
+
+        .component--content-block table thead + tbody tr:first-of-type td ul, .component--content-block table thead + tbody tr:first-of-type th ul {
+            margin-left: 0 !important;
+        }
+
+    .component--content-block table thead + tbody tr:first-of-type td {
+        text-transform: none;
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+
+    .component--content-block table thead + tbody tr:first-of-type th {
+        border-top: 1px solid #045072;
+        border-bottom: 1px solid #045072;
+        color: #045072;
+        text-align: left;
+    }
+
+    .component--content-block table tr {
+        border-bottom: 1px dashed #045072;
+    }
+
+    .component--content-block table td, .component--content-block table th {
+        padding: 20px;
+        border: 0;
+        color: #000;
+        vertical-align: top;
+        min-width: 200px;
+    }
+
+        .component--content-block table td ul, .component--content-block table th ul {
+            margin-left: 0 !important;
+        }
+
+    .component--content-block table th {
+        border-top: 1px solid #045072;
+        border-bottom: 1px solid #045072;
+        color: #045072;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+
+.component--map-interactive .content-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.component--map-interactive .map {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+    .component--map-interactive .map svg {
+        width: 100%;
+        max-width: 1170px;
+        height: 600px;
+    }
+
+    .component--map-interactive .map circle, .component--map-interactive .map text {
+        pointer-events: none;
+    }
+
+    .component--map-interactive .map path, .component--map-interactive .map text {
+        transition: fill .15s ease-out;
+    }
+
+.component--map-interactive .map__content {
+    position: absolute;
+    left: 0;
+    width: 100%
+}
+
+.component--map-interactive ul.map__items {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 20px;
+}
+
+html.no-js .component--map-interactive ul.map__items {
+    display: block;
+    width: 100%
+}
+
+    html.no-js .component--map-interactive ul.map__items li {
+        display: inline-block;
+        float: left;
+        width: 50%
+    }
+
+        html.no-js .component--map-interactive ul.map__items li:before {
+            display: inline-block;
+        }
+
+    html.no-js .component--map-interactive ul.map__items .content-map__block span {
+        display: none;
+    }
+
+    html.no-js .component--map-interactive ul.map__items .content-map__town--link {
+        display: block;
+        padding-left: 40px;
+    }
+
+
+html.no-js .component--map-interactive ul.map__items {
+    width: 75%;
+    left: 12.5%
+}
+
+html.js .component--map-interactive ul.map__items {
+    width: 37.5%;
+    left: 62.5%
+}
+
+.component--map-interactive .content-block {
+    padding-bottom: 80px;
+}
+
+.component--map-interactive ul.map__items {
+    padding-left: 30px;
+}
+
+html.no-js .component--map-interactive ul.map__items li {
+    width: 33.33333%
+}
+
+html.js .component--map-interactive ul.map__items {
+    position: absolute;
+    color: #fff;
+}
+
+    html.js .component--map-interactive ul.map__items a {
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+        color: #fff;
+        font-size: 24px;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 32px;
+        line-height: 3.2rem;
+        text-decoration: none;
+        background: tranparent;
+        transition: background .15s linear;
+        text-decoration: underline;
+    }
+
+        html.js .component--map-interactive ul.map__items a:after {
+            content: "\ea03";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            color: #cecece;
+            font-size: 18px;
+            font-size: 1.8rem;
+            transform: translateY(-50%) translateZ(0);
+        }
+
+        html.js .component--map-interactive ul.map__items a:focus, html.js .component--map-interactive ul.map__items a:hover {
+            text-decoration: none;
+        }
+
+            html.js .component--map-interactive ul.map__items a:focus i, html.js .component--map-interactive ul.map__items a:hover i {
+                color: #fff;
+            }
+
+            html.js .component--map-interactive ul.map__items a:focus:after, html.js .component--map-interactive ul.map__items a:hover:after {
+                color: #fff;
+                animation-name: a;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: 1;
+            }
+
+        html.js .component--map-interactive ul.map__items a.content-map__town--link:hover {
+            background-color: #022d41;
+        }
+
+    html.js .component--map-interactive ul.map__items .content-map__block {
+        display: block;
+    }
+
+    html.js .component--map-interactive ul.map__items .content-map__town--name {
+        color: #fff;
+        font-size: 24px;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 32px;
+        line-height: 3.2rem;
+    }
+
+    html.js .component--map-interactive ul.map__items .content-map__town--link {
+        margin: 0 -30px;
+        padding: 20px 30px;
+        border-top: 1px solid hsla(0, 0%, 70%, .2);
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 26px;
+        line-height: 2.6rem;
+    }
+
+        html.js .component--map-interactive ul.map__items .content-map__town--link:last-child {
+            margin-bottom: -30px;
+        }
+
+    html.js .component--map-interactive ul.map__items span + .content-map__town--link {
+        margin-top: 40px;
+    }
+
+    html.js .component--map-interactive ul.map__items li, html.js .component--map-interactive ul.map__items li:before {
+        display: none;
+    }
+
+
+.component .component__container, .component .component__wrapper, .grid-overlay, .grid__container, .grid__wrapper--inner, .js-featured-slider .dots {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-map {
+    *zoom: 1;
+}
+
+.component--map-interactive ul.map__items {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 20px;
+}
+
+html.no-js .component--map-interactive ul.map__items {
+    display: block;
+    width: 100%
+}
+
+    html.no-js .component--map-interactive ul.map__items li {
+        display: inline-block;
+        float: left;
+        width: 50%
+    }
+
+        html.no-js .component--map-interactive ul.map__items li:before {
+            display: inline-block;
+        }
+
+    html.no-js .component--map-interactive ul.map__items .content-map__block span {
+        display: none;
+    }
+
+    html.no-js .component--map-interactive ul.map__items .content-map__town--link {
+        display: block;
+        padding-left: 40px;
+    }
+
+.community-overview__map {
+    width: 100%;
+    padding-top: 30px;
+    background: #d2e3e5;
+    background: radial-gradient(ellipse at center, #fff 0, #d2e3e5 100%);
+
+}
+
+    .community-overview__map svg {
+        display: block;
+        margin: 0 auto;
+    }
+
+#tooltip-metro {
+    background: #004e89;
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    padding: 5px 10px;
+    text-decoration: underline;
+}
+
+    #tooltip-metro:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: "\20";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(0, 78, 137, 0);
+        border-top-color: #004e89;
+        border-width: 5px;
+        margin-left: -5px;
+    }
+
+
+html.js .content-map__block {
+    padding: 30px;
+    background: #045072;
+    color: #fff;
+}
+
+html.no-js .component--map-interactive ul.map__items .content-map__block span {
+    display: none;
+}

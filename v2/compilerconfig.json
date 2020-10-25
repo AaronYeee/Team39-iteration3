@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/css/kinderElig.css",
+    "inputFile": "Content/css/kinderElig.scss"
+  },
+  {
+    "outputFile": "Content/css/_services_section.css",
+    "inputFile": "Content/css/_services_section.scss"
+  }
+]

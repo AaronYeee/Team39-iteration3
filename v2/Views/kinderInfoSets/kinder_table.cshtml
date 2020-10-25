@@ -1,0 +1,159 @@
+﻿@model IEnumerable<v2.Models.kinderInfoSet>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="~/Content/DataTables/css/select.dataTables.css" rel="stylesheet" />
+
+
+
+<form id="part_form" action="Index" method="Post">
+    <table class="table" id="table1">
+        <thead>
+            <tr>
+                <th style="display:none"></th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Suburb)
+                </th>
+                <th style="display:none">
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+
+                <th style="display:none">
+                    @Html.DisplayNameFor(model => model.Location)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="coordinates">
+                    
+                    <td style="display:none"></td>
+                    <td id="kinderName1" class="S_name">
+                        @Html.DisplayFor(modelItem => item.Name)
+
+                    </td>
+                    <td class="Type1">
+                        @Html.DisplayFor(modelItem => item.Type)
+                    </td>
+                    <td id="kinderPost" class="postcode1">
+
+                        @Html.DisplayFor(modelItem => item.PostCode)
+                    </td>
+                    <td class="suburb1">
+
+                        @Html.DisplayFor(modelItem => item.Suburb)
+                    </td>
+                    <td style="display:none" class="eaddress1">
+
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td class="rating1">
+                        @Html.DisplayFor(modelItem => item.Rating)
+                    </td>
+                    <td class="address1">
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+
+                    <td class="location" style="display:none">
+                        @Html.DisplayFor(modelItem => item.Location)
+                    </td>
+                    <td class="phone1">
+
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+
+
+                </tr>
+            }
+        <tbody>
+
+
+    </table>
+    <input type="submit" class="btn btn-primary" id="postValue" value="See on Map" />
+</form>
+
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var list1 = [];
+        var table = $('#table1').DataTable({
+            columnDefs: [{
+                orderable: false,
+                
+                className: 'select-checkbox',
+                checkbox: {
+                    'selectRow': true
+                },
+                
+                targets: 0
+            }],
+            select: {
+                style: 'multi',
+                selector: 'td:first-child'
+            },
+            order: [[1, 'asc']]
+
+        });
+
+
+
+
+
+        $('#postValue').click(function () {
+
+            var count = table.rows({ selected: true }).data();
+            var i;
+            for (i = 0; i < count.length; i++) {
+
+                list1.push(count[i][1]);
+
+
+            }
+            console.log(list1);
+
+            $("#part_form").append(
+                $('<input>')
+                    .attr('type', 'hidden')
+                    .attr('name', 'listValues[]')
+                    .val(list1)
+            );
+
+        });
+
+
+
+
+    });
+</script>
+
+
+
+

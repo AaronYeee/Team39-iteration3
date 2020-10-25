@@ -1,0 +1,2968 @@
+﻿
+
+@{
+    ViewBag.Title = "UserReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<html lang="en" class="js">
+<head>
+
+    <link href="~/Content/css/coolSideBar.css" rel="stylesheet" />
+    <link href="~/Content/css/Myfont.css" rel="stylesheet" />
+    <link href="~/Content/css/QustionStepper.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/02929b6438.js" crossorigin="anonymous"></script>
+    <link href="~/Content/css/FlagDemo.css" rel="stylesheet" />
+    <script src="~/Scripts/js/raphael.js"></script>
+    <link href="~/Content/css/bootstrap/styles12345.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+    <div style="height:70px"></div>
+    <div>
+        <a href="javascript:" id="return-to-top"><span class="icon-arrow-up"></span></a>
+    </div>
+    <section>
+        <div class="container">
+            <div>
+                <ul class="breadcrumb">
+
+                    <li>
+                        <a href="~//Home/ReadyKinder">
+
+                            <span class="text">Ready Kinder?</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~//Home/Index">
+                            <span class="icon icon-home"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--Question Section-->
+            <div class="row accordion justify-content-center" id="questionpart">
+                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="">
+                    <!--navigation-->
+                    <div class="md-stepper-horizontal orange">
+                        <div class="md-step active" id="step11">
+                            <div class="md-step-circle"><span>1</span></div>
+                            <div class="md-step-title">Step 1</div>
+                            <div class="md-step-bar-left"></div>
+                            <div class="md-step-bar-right"></div>
+                        </div>
+                        <div class="md-step" id="step12">
+                            <div class="md-step-circle"><span>2</span></div>
+                            <div class="md-step-title">Step 2</div>
+                            <div class="md-step-optional"></div>
+                            <div class="md-step-bar-left"></div>
+                            <div class="md-step-bar-right"></div>
+                        </div>
+                        <div class="md-step" id="step13">
+                            <div class="md-step-circle"><span>3</span></div>
+                            <div class="md-step-title">Step 3</div>
+                            <div class="md-step-bar-left"></div>
+                            <div class="md-step-bar-right"></div>
+                        </div>
+                        <div class="md-step" id="step14">
+                            <div class="md-step-circle"><span>4</span></div>
+                            <div class="md-step-title">Step 4</div>
+                            <div class="md-step-bar-left"></div>
+                            <div class="md-step-bar-right"></div>
+                        </div>
+                        <div class="md-step" id="step15">
+                            <div class="md-step-circle"><span>5</span></div>
+                            <div class="md-step-title">Step 5</div>
+                            <div class="md-step-bar-left"></div>
+                            <div class="md-step-bar-right"></div>
+                        </div>
+                    </div>
+
+                    <!--navigation-->
+
+
+                    <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:30px ;background-color: #fef6e4;" id="Q1">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-lg-12 mr-auto  align-self-center">
+                                    <h2 style="color:#001858; font-weight:bold">Where are you from?</h2>
+
+                                    <div class="flags-container btn-group-toggle">
+                                        <div class="flags-grid">
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-3 text-center mb-4">
+
+                                                    <img src="~/Content/images/flags/Chinese.png" />
+
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off" value="CH">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option1">China</label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/American.png" />
+
+
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option2" autocomplete="off" value="USA">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option2">America</label>
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/British.png" />
+
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option3" autocomplete="off" value="Britain">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option3">
+                                                            Britain
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/Filipino.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option4" autocomplete="off" value="Philip">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option4">
+                                                            Philippines
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row justify-content-center">
+
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/German.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option6" autocomplete="off" value="German">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option6">Germany</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/Indian.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option8" autocomplete="off" value="India">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option8">India</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/indonesian.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option9" autocomplete="off" value="Indon">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option9">Indonesia</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/malaysia.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option11" autocomplete="off" value="Malay">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option11">Malaysia</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row justify-content-center">
+
+
+
+                                                <div class="col-lg-3 text-center mb-5">
+
+                                                    <img src="~/Content/images/flags/Singapore.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option13" autocomplete="off" value="Sin">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option13">Singapore</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 text-center mb-5">
+
+
+                                                    <img src="~/Content/images/flags/Vietnam.png" />
+
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option12" autocomplete="off" value="Vietnam">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option12">Vietnam</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 text-center mb-5">
+
+
+
+                                                    <img src="~/Content/images/flags/SriLankan.png" />
+
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option5" autocomplete="off" value="Sri">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option5">Sri LanKan</label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-lg-3 text-center mb-5">
+
+
+
+
+                                                    <img src="~/Content/images/flags/south-africa.png" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option15" autocomplete="off" value="Africa">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option15">Africa</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-4 text-center mb-5">
+                                                </div>
+                                                <div class="col-lg-4 text-center mb-5">
+
+
+
+                                                    <img src="~/Content/images/flags/measureshome.jpg" />
+                                                    <div style="margin-top:5px">
+                                                        <input type="radio" name="options" id="option14" autocomplete="off" value="Other">
+                                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="option14">Other</label>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-lg-4 mb-5" style="margin:auto">
+                                                    <input type="button" id="next1" class="btn btn-primary" value="Next" />
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row hover-1-wrap  mb-5 mb-lg-0" style="margin-top:30px;min-height:350px" id="Q2">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <div class="col-lg-12 ml-auto align-self-center">
+
+                                    <h2 class="green1">Selet the brithday of your child</h2>
+                                    <div class="col-lg-8 ml-auto align-self-center" style="margin-top:40px">
+                                        <label for="birthday" style=" font-size: 1.25rem; font-weight: bold" class="pink">Your child birthday:</label>
+                                        <input type="date" id="birthday" name="birthday" max="2020-12-31" style="font-weight:bold" class="darkBlue" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                    <button id="previous1" class="btn btn-primary">previous</button>
+
+                                </div>
+
+                                <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                    <input type="button" id="next2" class="btn btn-primary" value="Next" />
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hover-1-wrap" style="margin-top:30px;min-height:350px" id="Q3">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-lg-12 mr-auto  align-self-center">
+                                    <h2 class="green1">Your Residency situation</h2>
+
+                                </div>
+
+
+                                <div>
+
+                                    <div style="margin-top:5px">
+                                        <p class="pink">You or your accomplice:</p>
+                                        <input type="radio" name="visas" id="o1" autocomplete="off" value="a">
+                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="o1"> living in Australia and any one of you holds Australian citizenship</label>
+                                    </div>
+
+                                    <div style="margin-top:5px">
+                                        <input type="radio" name="visas" id="o5" autocomplete="off" value="a">
+                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="o5"> an understudy from abroad, supported by the Australian Government to concentrate in Australia</label>
+                                    </div>
+
+                                    <div style="margin-top:20px">
+                                        <p class="pink">You or your accomplice have one of the following visa:</p>
+                                        <input type="radio" name="visas" id="o2" autocomplete="off" value="permanent">
+                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="o2">Permanent visa</label>
+                                    </div>
+                                    <div style="margin-top:5px">
+                                        <input type="radio" name="visas" id="o3" autocomplete="off" value="a">
+                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="o3">Special Category visa</label>
+                                    </div>
+                                    <div style="margin-top:5px">
+                                        <input type="radio" name="visas" id="o4" autocomplete="off" value="a">
+                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="o4">Certain temporary visa</label>
+                                    </div>
+                                    <div style="margin-top:5px">
+                                        <input type="radio" name="visas" id="o6" autocomplete="off" value="b">
+                                        <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="o6">Other</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                    <button id="previous2" class="btn btn-primary">previous</button>
+
+                                </div>
+
+                                <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                    <input type="button" id="next3" class="btn btn-primary" value="Next" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:30px;min-height:350px" id="Q4">
+
+                        <div class="col-12">
+                            <div class="row">
+
+                                <div class="col-lg-12 ml-auto align-self-center">
+
+                                    <h2 class="green1">Select Your preference type </h2>
+
+                                    <div>
+                                        <div style="margin-top:20px">
+                                            <p class="pink">Which type you prefer? private or public kindergarten</p>
+                                            <input type="radio" name="kinderTypes" id="t1" autocomplete="off" value="a">
+                                            <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="t1">Private</label>
+                                        </div>
+                                        <div style="margin-top:5px">
+                                            <input type="radio" name="kinderTypes" id="t2" autocomplete="off" value="b">
+                                            <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="t2">Public</label>
+                                        </div>
+                                        <div style="margin-top:5px">
+                                            <input type="radio" name="kinderTypes" id="t3" autocomplete="off" value="c">
+                                            <label class="darkBlue" style="font-weight:bold;font-size:1.25rem;" for="t3">No idea</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                    <button id="previous3" class="btn btn-primary">previous</button>
+
+                                </div>
+
+                                <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                    <input type="button" id="next4" class="btn btn-primary" value="Next" />
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:30px" id="Q5">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <div class="col-lg-12 ml-auto align-self-center">
+
+                                    <h2 class="green1">Select Your location preference for kindergartens</h2>
+
+                                    <div class="col-lg-8 ml-auto align-self-center" style="margin-top:40px">
+                                        <label for="Suburb" style=" font-size: 1.25rem; font-weight: bold" class="pink">Suburb:</label>
+                                        <input type="text" id="Suburb" name="suburb" style="font-weight:bold" class="darkBlue" />
+                                    </div>
+                                    <div class="col-lg-8 ml-auto align-self-center" style="margin-top:40px">
+                                        <label for="PostCode" style=" font-size: 1.25rem; font-weight: bold" class="pink">PostCode:</label>
+                                        <input type="text" id="PostCode" name="postcode" maxlength="4" style="font-weight:bold" class="darkBlue" />
+                                    </div>
+                                    <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+
+                                        <button id="previous4" class="btn btn-primary">previous</button>
+
+                                    </div>
+                                    <div class="col-lg-4 ml-auto align-self-center" style="margin-top:50px">
+                                        <!---
+                                        <input type="submit" id="next5" class="btn btn-primary" value="Submit" />
+                                        -->
+                                        <button class="btn btn-primary" id="next5">Submit</button>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Question Section end-->
+            <!--reprot part-->
+            <div class="container" id="requizzz">
+                <button class="btn btn-primary" id="re-do12">re-do quiz</button>
+            </div>
+            <!--greeting part1-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingCH">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Chinese community </h2>
+                                <p class="mb-4 darkBlue" style="font-weight:bold">
+                                    Chinese migrants have been arriving in Victoria since the gold rush of the 1850s. They are now a big part of Melbourne’s growing population,
+                                    so much so that the number of Chinese-born migrants living in Melbourne has more than doubled since 2001.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">31% </h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia's Chinese migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">66,756 </h2>
+                                        <p class="reportIntro" style="font-weight:bold">Chinese people have migrated to Victoria since 2011</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">40%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">are families with children (approx)</p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">33 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age of Chinese migrants</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">31%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's Chinese community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">21.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">17.6%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Accommodation and food services</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">12.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">10.6%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">9.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part1 end-->
+            <!--greeting part2-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingUS">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's American community </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">19% </h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of American migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">2850 </h2>
+                                        <p class="reportIntro" style="font-weight:bold">Americans have migrated to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">48%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of American migrants are families with children and 25%
+                                            are couples with no children (approx)
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">37 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">54%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's American community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">18.7%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">16.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Education and training</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">6.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Arts, recreation and other services</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">11.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">11.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part2 end-->
+            <!--greeting part3-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingBrit">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's British community </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">15% </h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia's British migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">30,000 </h2>
+                                        <p class="reportIntro" style="font-weight:bold">British people have migrated to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">35%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of British migrants are families with children and 34% are couples with now children
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">54 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">65%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's British community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.3%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">13.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">12.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">11%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">9.3%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Education and training</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part3 end-->
+            <!--greeting part4-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingFilip">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Filipino community </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">19%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Filipino migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">13,288 </h2>
+                                        <p class="reportIntro" style="font-weight:bold">migrants from the Philippines have moved to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">62%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Filipino migrants are families with children and 16% are couples with no children (approx)
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">39 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">68%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's Filipino community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">23.2%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">20.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">10.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">9.5%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">6.2%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Accommodation and Food Services</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part4 end-->
+            <!--greeting part5-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingGerman">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's German community </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">20%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia’s German migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">3000 </h2>
+                                        <p class="reportIntro" style="font-weight:bold">people have migrated from Germany to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">39%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            are couples with no children and 23% are couples with children (approx)
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">61 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">69%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's German community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">13.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">13.2%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">12.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">9.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Education and training</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part5 end-->
+            <!--greeting part6-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingIndia">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Indian community </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">35%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia's Indian migrants choose Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">58,015</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Indians have migrated to Victoria since 2011</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">50%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Indian migrants are families with children and 25% are couples with no children (approx)
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">31 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age of Indian migrants</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">46%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's  Indian community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.7%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administrative</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">13.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">12.7%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">11.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">9.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Transport, postal and warehousing</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part6 end-->
+            <!--greeting part7-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingIndone">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Indonesian community  </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">23%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia’s Indonesian migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">2,400</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Indonesian-born people have migrated to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">38%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Indonesian migrants are couples with children and 19% are couples with no children
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">30 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">30%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's  Indonesian  community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">16.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administrative</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">16.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Accommodation and food services</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">9.5%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">7.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Finance and insurance</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part7 end-->
+            <!--greeting part8-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingMalay">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Malaysian community   </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">34%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia's Malaysian migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">10,259</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Malaysian people have migrated to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">44%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Malaysian migrants are families with children (approx)
+
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">37 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">41%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship (approx)</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's Malaysian community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">17.6%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administrative</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">17.3%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">13.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">8.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Finance and insurance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">7.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part8 end-->
+            <!--greeting part9-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingSingap">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Singaporean community   </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">28%(APPROX)</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Singaporean migrants choose to live in Melbourne
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">7000</h2>
+                                        <p class="reportIntro" style="font-weight:bold">people have migrated from Singapore to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">48%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Singaporean migrants are families with children and 17% are couples with no children (approx)
+
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">32 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">49% </h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's Singaporean community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">17.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">15.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">12.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">11.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Education and training</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">8.3%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part9 end-->
+            <!--greeting part10-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingVietna">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Vietnamese community   </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">36%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia’s Vietnamese migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">12,490</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Vietnam-born people have migrated to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">53%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Vietnamese migrants are families with children and 15% are one-parent families (approx)
+
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">42 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">75% </h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's Vietnamese community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">30.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">15.3%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">7.7%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Accommodation and food services</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">7.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">6.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Agricultural, forestry, fishery and mining</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part10 end-->
+            <!--greeting part11-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingSri">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's Sri Lankan community    </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">49%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Sri Lankan migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">11,839</h2>
+                                        <p class="reportIntro" style="font-weight:bold">people have migrated from Sri Lanka to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">58%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Sri Lankan migrants are families with children and 21% are families with no children (approx)
+
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">40 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">59% </h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's Sri Lankan community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">15%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.3%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">12.9%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">6.5%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Accommodation and Food Services</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part11 end-->
+            <!--greeting part12-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingAfri">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">A glance Of Melbourne's African community     </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">15%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of Australia’s South African migrants choose to live in Melbourne (approx)
+                                            <i class="fas fa-home fa-2x green" style="float: right"></i>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">10,000</h2>
+                                        <p class="reportIntro" style="font-weight:bold">South Africans have migrated to Victoria since 2011 (approx)</p>
+                                        <span class="fas fa-plane-departure fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">57%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            of South African migrants are couples with children and 22% are couples with no children (approx)
+
+                                        </p>
+                                        <i class="fas fa-child fa-2x green" style="float: right;"></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">40 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">average age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">74%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">have Australian citizenship</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div style="height:70px"></div>
+
+                            <div class="col-lg-12 mr-auto">
+
+                                <h2 class="green1" style=" text-align: left;">
+                                    Top industries for Melbourne's South African community
+                                </h2>
+
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">17.5%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Professional, scientific, technical and administration</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.8%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Health care and social assistance</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">14.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Wholesale and retail trade</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">10.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Manufacturing</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:150px">
+                                        <h2 class="pinkReport">
+                                            9.6%
+                                        </h2>
+                                        <p class="reportIntro" style="font-weight:bold">Education and training</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part12 end-->
+            <!--greeting part13-->
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px" id="greetingOther">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-lg-12 mr-auto">
+                            <div class="align-self-center">
+                                <h1 class="bigTitle ">Welcome to Melbourne!</h1>
+                                <div style="height:70px"></div>
+                            </div>
+                            <div>
+                                <h2 class="green1" style=" text-align: left;">About Melbourne</h2>
+                                <p class="text-black">
+                                    Melbourne has been repeatedly declared one the most liveable cities in the world by The Economist’s liveability rankings,
+                                    which surveys over 140 cities around the world.
+                                </p>
+                                <h2 class="green1" style=" text-align: left;">People & language</h2>
+                                <p class="text-black">
+                                    Melbourne is the capital city of the state of Victoria and is home to more than five million people. We have a proud history of cultural diversity – we’re made up of many different people from all kinds of cultures and all ages.
+                                    We’re inclusive, progressive and respectful of people’s differences.
+                                </p>
+                                <p class="text-black">
+                                    The official language spoken in Melbourne is English, but more than 100 languages are spoken by Melbourne residents including
+                                    Mandarin, Italian, Greek, Cantonese, Arabic and Vietnamese.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <h2 class="green1" style=" text-align: left;">Melbourne facts</h2>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+                                        <img src="~/Content/images/flags/313.PNG" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">2.5 million</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            International visitors per year
+                                            <span class="fas fa-plane-departure fa-2x green" style="float: right;"></span>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">4,529,500</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Population</p>
+                                        <span class="fas fa-child fa-2x green" style="float: left;"></span>
+                                        <span class="fas fa-child fa-2x green" style="float: left;"></span>
+                                        <span class="fas fa-child fa-2x green" style="float: left;"></span>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">36.7%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            residents were born overseas
+
+                                        </p>
+                                        <i class="fas fa-globe-europe fa-2x green" style="float: right;"></i>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">35.3 YEARS</h2>
+                                        <p class="reportIntro" style="font-weight:bold">median age</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">444.5</h2>
+                                        <p class="reportIntro" style="font-weight:bold">persons per square km population density</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col mr-auto">
+                                    <div class="align-self-center" style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">76.4%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">residents with access to the internet at home</p>
+                                        <span class="fas  fa-wifi fa-2x green" style="float: left;"></span>
+
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px; min-height:200px">
+                                        <h2 class="darkBlueReport">57.6%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            residents have a post-school qualification
+
+                                        </p>
+                                        <i class="fas fa-graduation-cap fa-2x green" style="float: right;"></i>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col mr-auto " style="min-height:220px">
+                                    <div style="margin-top: 20px; background-color: #eeeee6; padding: 10px;min-height:200px">
+                                        <h2 class="darkBlueReport">73,946</h2>
+                                        <p class="reportIntro" style="font-weight:bold">migrants arrived in Melbourne in 2014</p>
+
+                                    </div>
+
+                                    <div style="margin-top:20px;background-color: #eeeee6;padding:10px;min-height:200px">
+                                        <h2 class="darkBlueReport">999,052 HA</h2>
+                                        <p class="reportIntro" style="font-weight:bold">Land area</p>
+                                        <i class="fas fa-city fa-2x green" style="float: right;"></i>
+
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 mb-lg-0 col-lg-5 ">
+                                    <a class="hover-1">
+
+                                        <img src="~/Content/images/flags/languages-edited.png" class="img-fluid" />
+                                    </a>
+
+                                    <div style="margin-top:10px;background-color: #eeeee6;padding:10px">
+                                        <h2 class="darkBlueReport">29.1%</h2>
+                                        <p class="reportIntro" style="font-weight:bold">
+                                            residents speak a language other than English at home
+                                            <span class="fas fa-language fa-2x green" style="float: right;"></span>
+
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--greeting part12 end-->
+            <!--reprot part end-->
+        </div>
+
+
+        <!--map parts-->
+        <div class="col-12">
+
+
+            <div id="forloadview">
+
+            </div>
+            <div id="loadview">
+
+            </div>
+
+        </div>
+        <!--map parts end-->
+        <!--ready?-->
+        <div id="ifready">
+            <div id="ready4" style="margin-top:50px">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="greenReport" style="text-align:center">Early education Summary for you </h2>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="pink1" style="text-align:left">Congratulations!</h2>
+                        <p class="green" style="font-weight:bold">Your child is ready for 4-years kindergarten</p>
+
+                        <p class="text-black">
+                            The Victorian kindergarten program is a one to two-year preschool program for children before they start primary school.
+                            Kindergarten is not compulsory in Victoria but most children attend at least the second year (four-year-old kindergarten) – to develop social,
+                            mental and physical skills in preparation for school.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="ready41" style="margin-top:50px">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="greenReport" style="text-align:center">Early education Summary for you </h2>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="pink1" style="text-align:left">Kindergarten Ready soon !</h2>
+                        <p class="green" style="font-weight:bold">Your kid is 4 years old now ,</p>
+                        <p class="green" style="font-weight:bold">but a kid must be 4 years of age before 30 April to enrol a kindergarten.</p>
+
+                        <p class="text-black">
+                            The Victorian kindergarten program is a one to two-year preschool program for children before they start primary school.
+                            Kindergarten is not compulsory in Victoria but most children attend at least the second year (four-year-old kindergarten) – to develop social,
+                            mental and physical skills in preparation for school.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="ready3" style="margin-top:50px">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="greenReport" style="text-align:center">Early education Summary for you </h2>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="pink1" style="text-align:left">Congratulations!</h2>
+                        <p class="green" style="font-weight:bold">Your child is ready for 3-years kindergarten</p>
+
+                        <p class="green">
+                            The Victorian kindergarten program is a one to two-year preschool program for children before they start primary school.
+                            Kindergarten is not compulsory in Victoria but most children attend at least the second year (four-year-old kindergarten) – to develop social,
+                            mental and physical skills in preparation for school.
+                        </p>
+                        <p class="pink">
+                            The Victorian Government is investing almost $5 billion over the decade to deliver Three-Year-Old Kindergarten.
+                            This program will run in sessional kindergartens along with some long day cares. This Early Start Kindergarten will give access to two years of learning for children.
+                            This program will be available for three years olds in 6 government areas:<br />
+                            <ul>
+                                <li>Buloke</li>
+                                <li>Hindmarsh</li>
+                                <li>Northern Grampians</li>
+                                <li>South Gippsland</li>
+                                <li>Strathbogie</li>
+                                <li>Yarriambiack</li>
+                            </ul>
+                            The Victorian government roll up strategy aims for providing three year old access to kindergarten services in 2022.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="ready31" style="margin-top:50px">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="greenReport" style="text-align:center">Early education Summary for you </h2>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="pink1" style="text-align:left">Kindergarten Ready soon !</h2>
+                        <p class="green" style="font-weight:bold">Your kid is 3 years old now ,</p>
+                        <p class="green" style="font-weight:bold">but a kid must be 3 years of age before 30 April to enrol a kindergarten.</p>
+
+                        <p class="green">
+                            The Victorian kindergarten program is a one to two-year preschool program for children before they start primary school.
+                            Kindergarten is not compulsory in Victoria but most children attend at least the second year (four-year-old kindergarten) – to develop social,
+                            mental and physical skills in preparation for school.
+                        </p>
+                        <p class="pink">
+                            The Victorian Government is investing almost $5 billion over the decade to deliver Three-Year-Old Kindergarten.
+                            This program will run in sessional kindergartens along with some long day cares. This Early Start Kindergarten will give access to two years of learning for children.
+                            This program will be available for three years olds in 6 government areas:<br />
+                            <ul>
+                                <li>Buloke</li>
+                                <li>Hindmarsh</li>
+                                <li>Northern Grampians</li>
+                                <li>South Gippsland</li>
+                                <li>Strathbogie</li>
+                                <li>Yarriambiack</li>
+                            </ul>
+                            The Victorian government roll up strategy aims for providing three year old access to kindergarten services in 2022.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="ready2" style="margin-top:50px">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="greenReport" style="text-align:center">Early education Summary for you </h2>
+                    </div>
+                    <div class="col-12" style="margin-top:50px">
+                        <h2 class="pink1" style="text-align:left">Good Choice to prepare before your kid is ready!</h2>
+                        <p class="green" style="font-weight:bold">Your child is under 3 years old</p>
+                        <p class="green" style="font-weight:bold">But it is good for you to prepare and get ready for you kid!</p>
+
+                        <p class="green">
+                            The Victorian kindergarten program is a one to two-year preschool program for children before they start primary school.
+                            Kindergarten is not compulsory in Victoria but most children attend at least the second year (four-year-old kindergarten) – to develop social,
+                            mental and physical skills in preparation for school.
+                        </p>
+                        <p class="pink">
+                            The Victorian Government is investing almost $5 billion over the decade to deliver Three-Year-Old Kindergarten.
+                            This program will run in sessional kindergartens along with some long day cares. This Early Start Kindergarten will give access to two years of learning for children.
+                            This program will be available for three years olds in 6 government areas:<br />
+                            <ul>
+                                <li>Buloke</li>
+                                <li>Hindmarsh</li>
+                                <li>Northern Grampians</li>
+                                <li>South Gippsland</li>
+                                <li>Strathbogie</li>
+                                <li>Yarriambiack</li>
+                            </ul>
+                            The Victorian government roll up strategy aims for providing three year old access to kindergarten services in 2022.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="ready100" style="margin-top:50px">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="greenReport" style="text-align:center">Early education Summary for you </h2>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="pink1" style="text-align:left">Congratulations!</h2>
+                        <p class="green" style="font-weight:bold">You  kid is already grow up(over 6-years old) and ready for further education</p>
+
+
+                        <p class="text-black">
+                            For more information about the further study, please <a href="https://liveinmelbourne.vic.gov.au/live/education-and-childcare" class="pink">visit here</a>
+                        </p>
+
+                        <p class="pink" style="font-weight:bold">Input wrong brithday?</p>
+                        <button id="re-quiz2" class="btn btn-primary">Re-do the quiz</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ready?-->
+        <!--support?-->
+        <div class="container" id="support">
+            <div class="row hover-1-wrap mb-5 mb-lg-0" style="margin-top:50px">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-12 mr-auto">
+
+
+                            <h2 class="green1" style=" text-align: left;">Do you know?</h2>
+                            <p class="text-black">
+                                Australian Government is supporting you and your family with the kindergarten fee subsidy.
+                                It allows children to access up to <strong>15 hours of funded kindergarten</strong> delivered by a qualified early childhood teacher for free or at low cost.
+                            </p>
+
+                            <p class="pink" style="font-weight:bold">For more information about the Subsidy fees <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/child-care-subsidy" class="green">visit here</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--support?-->
+        <!--fees glance-->
+        <div class="container" id="options1">
+            <div>
+                <h3 class="green1" style=" text-align: left;font-weight:bold">
+                    Early learning options
+                </h3>
+                <p class="pink" style="font-weight:bold">
+                    For children aged between six weeks and six years old:
+                </p>
+            </div>
+            <table style="width: 100%;" border="1">
+                <thead>
+                    <tr>
+                        <th class="pink" style="font-weight:bold">Childcare</th>
+                        <th class="pink" style="font-weight:bold">Playgroups</th>
+                        <th class="pink" style="font-weight:bold">Kindergarten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-black">
+                            <ul>
+                                <li>Private or community childcare is available for children aged over six weeks.</li>
+                                <li>You can choose from private, community, family or in-home childcare.</li>
+                                <li>Costs range from $6 an hour to $185 a day.</li>
+
+                            </ul>
+                        </td>
+                        <td class="text-black">
+                            <ul>
+                                <li>A regular group to bring young children together to socialise.</li>
+                                <li>You are responsible for the care of your children.</li>
+                                <li>Playgroups are generally either free or up to A$10 per session.</li>
+
+                            </ul>
+                        </td>
+                        <td class="text-black">
+                            <ul>
+                                <li>A one to two-year preschool program is available for children aged three to five.</li>
+                                <li>Costs can vary wildly, but the Victorian Government does pay a subsidy to help reduce costs.</li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="margin-top:50px">
+                <h2 class="green1" style=" text-align: left;">A glance Of Typical childcare costs</h2>
+                <div id="chartdivCosts" style="height:400px;width:100%"></div>
+                <div style="margin-top:20px">
+                    <p class="green" style="font-weight:bold"> For more information  <a href="https://liveinmelbourne.vic.gov.au/live/education-and-childcare/pre-school-education#Childcare" class="pink">visit here</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--fees glance end-->
+
+        <div id="private-prefer">
+            <div class="container" id="privateKinderPie">
+                <div class="text-center">
+                    <h2 class="darkBlueReport" style="text-align:center">Private preschool program in Victoria </h2>
+                </div>
+                <div class="col-12">
+
+                    <div class="row">
+
+
+                        <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" style="min-height:500px;margin-top:20px;">
+                            <div style="min-height:100px">
+                            </div>
+                            <div>
+
+                                <p class="mb-4 text-black">
+                                    <strong> Private and community-based centres </strong> are run by qualified staff and are usually open Monday to Friday from around 7am to 6pm.
+                                    All centres must be licensed and are carefully regulated in Victoria, with strict rules on:
+                                </p>
+                                <p class="mb-4 text-black">
+                                    <ul class="mb-4 green">
+                                        <li>running and maintaining centres</li>
+                                        <li>the quality of care and food provided</li>
+                                        <li>the number of children in attendance</li>
+                                    </ul>
+                                </p>
+                                <button class="btn btn-primary" id="show-public">What about public?</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mr-auto  align-self-center order-lg-1">
+                            <div id="chartdiv" style="min-height:500px"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container" id="publicKinderPie" style="display:none">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="darkBlueReport" style="text-align:center">Private preschool program in Victoria </h2>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" style="min-height:500px;margin-top:20px;">
+                            <div style="min-height:100px">
+                            </div>
+                            <div>
+
+                                <p class="mb-4 text-black">
+                                    <strong>Public schools</strong> are often known as state kindergarten or government kindergarten.
+                                    Victoria has more than 600 public kindergarten.
+                                </p>
+                                <p class="mb-4 pink">
+                                    If it's hard to find a public kindergarten nearby you lcoation, private unprofit kindergarten is a good choice.
+                                </p>
+                                <button class="btn btn-primary" id="hide-public">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mr-auto  align-self-center order-lg-1">
+                            <div id="chartdiv1" style="min-height:500px"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--public-prefer-->
+        <div id="public-prefer">
+
+
+            <!--publicKinderPie1-->
+            <div class="container" id="publicKinderPie1">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="darkBlueReport">Public preschool program in Victoria </h2>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" style="min-height:500px;margin-top:20px;">
+                            <div style="min-height:100px">
+                            </div>
+                            <div>
+
+                                <p class="mb-4 text-black">
+                                    <strong>Public schools</strong> are often known as state kindergarten or government kindergarten.
+                                    Victoria has more than 600 public kindergarten.
+                                </p>
+                                <p class="mb-4 pink">
+                                    If it's hard to find a public kindergarten nearby you lcoation, private unprofit kindergarten is a good choice.
+                                </p>
+                                <button class="btn btn-primary" id="hide-public1">What about Private?</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mr-auto  align-self-center order-lg-1">
+                            <div id="chartdiv3" style="min-height:500px"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--privateKinderPie1-->
+            <div class="container" id="privateKinderPie1">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="darkBlueReport">Public preschool program in Victoria </h2>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" style="min-height:500px;margin-top:20px;">
+                            <div style="min-height:100px">
+                            </div>
+                            <div>
+
+                                <p class="mb-4 text-black">
+                                    <strong> Private and community-based centres </strong> are run by qualified staff and are usually open Monday to Friday from around 7am to 6pm.
+                                    All centres must be licensed and are carefully regulated in Victoria, with strict rules on:
+                                </p>
+                                <p class="mb-4 text-black">
+                                    <ul class="mb-4 green">
+                                        <li>running and maintaining centres</li>
+                                        <li>the quality of care and food provided</li>
+                                        <li>the number of children in attendance</li>
+                                    </ul>
+                                </p>
+                                <button class="btn btn-primary" id="show-public1">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mr-auto  align-self-center order-lg-1">
+                            <div id="chartdiv2" style="min-height:500px"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--unknow-->
+        <div id="unknow">
+            <div class="container">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="darkBlueReport">Public vs Private preschool in Victoria </h2>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" style="min-height:500px;margin-top:20px;">
+                            <div style="min-height:100px">
+                            </div>
+                            <div>
+
+                                <p class="mb-4 text-black">
+                                    <strong>Public schools</strong> are often known as state kindergarten or government kindergarten.
+                                    Victoria has more than 600 public kindergarten.
+                                </p>
+                                <p class="mb-4 green" style="font-weight:bold">
+                                    If it's hard to find a public kindergarten nearby you lcoation, private unprofit kindergarten is a good choice.
+                                </p>
+                                <p class="mb-4 text-black">
+                                    <strong> Private and community-based centres </strong> are run by qualified staff and are usually open Monday to Friday from around 7am to 6pm.
+                                    All centres must be licensed and are carefully regulated in Victoria, with strict rules on:
+                                </p>
+                                <p class="mb-4 text-black">
+                                    <ul class="mb-4 green" style="font-weight:bold">
+                                        <li>running and maintaining centres</li>
+                                        <li>the quality of care and food provided</li>
+                                        <li>the number of children in attendance</li>
+                                    </ul>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mr-auto  align-self-center order-lg-1">
+
+                            <div id="chart100" style="width:100%; height: 400px"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--unknow end-->
+
+        <div id="rec_table">
+
+            <div class="col-12" style="margin-top:100px">
+                <div class="row">
+                    <div class="col-lg-8 mr-auto  align-self-center " style="margin:auto">
+                        <div class="text-center">
+                            <h2 class="green1"> Kindergarten Recommendations </h2>
+                        </div>
+                        <p class="pink" style="font-weight:bold">
+                            Based on your location, we provide a list of kindergartens for you:
+                        </p>
+                    </div>
+                   
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-8 mr-auto  align-self-center " style="margin:auto">
+                        <div id="target3">
+                            @{Html.RenderPartial("kinder_table");}
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <script src="~/Scripts/js/reportQuiz.js"></script>
+    <script src="~/Scripts/js/vendor.js"></script>
+    <script src="~/Scripts/js/map.metro.js"></script>
+
+
+
+
+    <!--charts-->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/lang/de_DE.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/germanyLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/fonts/notosans-sc.js"></script>
+    <script src="~/Scripts/js/feeschart.js"></script>
+    <script src="~/Scripts/js/feesChartBoth.js"></script>
+    <script src="~/Scripts/js/half-pie-private.js"></script>
+    <script src="~/Scripts/js/half-pie-public.js"></script>
+</body>
+
+</html>
+
